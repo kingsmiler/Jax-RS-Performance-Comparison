@@ -39,15 +39,15 @@ I use 16 threads and 100/200/500/1000 connnections to test each case.
 
 **Starting Server**
 ```
-java -Xmx4g -Xms4g -jar jersey-grizzly2-1.0.0.jar
-java -Xmx4g -Xms4g -jar jersey-jetty-1.0.0.jar
-java -Xmx4g -Xms4g -jar dropwizard-1.0.0.jar hello.yml
-java -Xmx4g -Xms4g -jar resteasy-netty-1.0.0.jar
-java -Xmx4g -Xms4g -jar resteasy-undertow-1.0.0.jar
-java -Xmx4g -Xms4g -jar springboot-1.0.0.jar
-java -Xmx4g -Xms4g -jar resteasy-netty4-1.0.0.jar
-java -Xmx4g -Xms4g -jar nativenetty-1.0.0.jar
-java -Xmx4g -Xms4g -jar vertx-1.0.0.jar
+java -Xmx4g -Xms4g -jar jersey-grizzly2-1.0.1.jar
+java -Xmx4g -Xms4g -jar jersey-jetty-1.0.1.jar
+java -Xmx4g -Xms4g -jar dropwizard-1.0.1.jar hello.yml
+java -Xmx4g -Xms4g -jar resteasy-netty-1.0.1.jar
+java -Xmx4g -Xms4g -jar resteasy-undertow-1.0.1.jar
+java -Xmx4g -Xms4g -jar springboot-1.0.1.jar
+java -Xmx4g -Xms4g -jar resteasy-netty4-1.0.1.jar
+java -Xmx4g -Xms4g -jar nativenetty-1.0.1.jar
+java -Xmx4g -Xms4g -jar vertx-1.0.1.jar
 ```
 
 ### Test Result

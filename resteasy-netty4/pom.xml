@@ -5,16 +5,11 @@
     <parent>
         <artifactId>restful-services</artifactId>
         <groupId>com.colobu</groupId>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>resteasy-netty4</artifactId>
-
-    <properties>
-        <resteasy.version>3.0.13.Final</resteasy.version>
-        <netty.version>4.0.33.Final</netty.version>
-    </properties>
 
     <dependencies>
         <dependency>
@@ -35,13 +30,7 @@
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-all</artifactId>
-            <version>${netty.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.9</version>
-            <scope>test</scope>
+            <version>${netty-all.version}</version>
         </dependency>
     </dependencies>
     <build>
@@ -49,7 +38,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>2.4.2</version>
+                <version>${plugin.shade.version}</version>
                 <configuration>
                     <createDependencyReducedPom>true</createDependencyReducedPom>
                     <filters>
@@ -85,7 +74,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
-                <version>1.2.1</version>
+                <version>${plugin.exec.version}</version>
                 <executions>
                     <execution>
                         <goals>

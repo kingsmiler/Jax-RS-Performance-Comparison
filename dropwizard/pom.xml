@@ -5,16 +5,13 @@
     <parent>
         <artifactId>restful-services</artifactId>
         <groupId>com.colobu</groupId>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>dropwizard</artifactId>
 
-    <properties>
-        <dropwizard.version>0.9.1</dropwizard.version>
-    </properties>
 
     <dependencies>
         <dependency>
@@ -29,7 +26,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>2.4.2</version>
+                <version>${plugin.shade.version}</version>
                 <configuration>
                     <createDependencyReducedPom>true</createDependencyReducedPom>
                     <filters>
@@ -77,7 +74,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
-                <version>1.2.1</version>
+                <version>${plugin.exec.version}</version>
                 <executions>
                     <execution>
                         <goals>

@@ -7,15 +7,32 @@
     <groupId>com.colobu</groupId>
     <artifactId>restful-services</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <properties>
         <maven.test.skip>true</maven.test.skip>
-        <jersey.version>2.22.1</jersey.version>
+        <jersey.version>2.22.2</jersey.version>
         <java.version>1.8</java.version>
+        <plugin.exec.version>1.4.0</plugin.exec.version>
+        <plugin.shade.version>2.4.3</plugin.shade.version>
+
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <jetty.version>9.3.8.v20160314</jetty.version>
+        <junit.version>4.11</junit.version>
+
+
+        <netty3.version>3.6.10.Final</netty3.version>
+        <netty-all.version>4.0.36.Final</netty-all.version>
+
+        <resteasy.version>3.0.16.Final</resteasy.version>
+        <undertow.version>1.3.20.Final</undertow.version>
+
+        <dropwizard.version>0.9.2</dropwizard.version>
+        <springboot.version>1.3.3.RELEASE</springboot.version>
+        <vertx.version>3.2.1</vertx.version>
     </properties>
 
     <modules>
@@ -23,10 +40,10 @@
         <module>jersey-grizzly2</module>
         <module>resteasy-undertow</module>
         <module>resteasy-netty</module>
+        <module>resteasy-netty4</module>
         <module>dropwizard</module>
         <module>springboot</module>
         <module>nativenetty</module>
-        <module>resteasy-netty4</module>
         <module>vertx</module>
         <module>vertx-verticles</module>
     </modules>
@@ -42,6 +59,15 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
     <build>
         <pluginManagement>
             <plugins>
